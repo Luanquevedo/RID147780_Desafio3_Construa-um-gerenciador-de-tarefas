@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #F5F9FF;
+    --primary-text-color: #001747;
+    --secondary-text-color: #11175E;
+    --tertiary-text-color: #8F98A8;
+    --primary-btn-color: #2D70FD;
+    --secondary-btn-color: #00D8A7;
+
+    --primary-font: Rubik;
+    --secondary-font: Inter;
+}

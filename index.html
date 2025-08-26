@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <main>
+        <section id="header_Text">
+            <h1>Board de tarefas</h1>
+        </section>
+        <section>
+            <form id="register_Section">
+                <input type="text" name="task_Name" id="task_Name" class="register_Input" aria-label="Nome da tarefa"
+                    placeholder="Nome da tarefa">
+                <input type="text" name="task_Label" id="task_Label" class="register_Input" aria-label="Etiqueta"
+                    placeholder="Etiqueta">
+                <button type="submit" aria-label="Cadastrar tarefa" class="register_Btn">+</button>
+            </form>
+        </section>
+        <section id="tasks_Section">
+            <ul id="tasks_List">
+            </ul>
+        </section>
+        <footer>
+            <div class="bar"></div>
+            <p id="tasks_Completed"></p>
+        </footer>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

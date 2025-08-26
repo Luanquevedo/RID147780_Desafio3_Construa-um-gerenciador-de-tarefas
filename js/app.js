@@ -35,6 +35,7 @@ const storage = {
     }
 }
 
+// criação de novas tasks com persistencia em localStorage
 function createNewTask(event) {
     event.preventDefault();
 
@@ -59,7 +60,8 @@ function createNewTask(event) {
 
 
 }
-function createTaskListItem(task, conclude) {
+
+function createTaskListItem(task) {
 
     // criação dos elementos da lista de tasks
     const list = document.getElementById('tasks_List');
@@ -124,20 +126,24 @@ function createTaskListItem(task, conclude) {
 
     list.appendChild(itens);
 }
+
+//contagem de tasks completas pelo length filtrado
 function tasksComplited() {
     const completedTasks = tasks.filter(task => task.status === true);
 
     return completedTasks.length
 }
-function updateCompletedCount() {
-    const completedCount = tasksComplited()
 
+//atualiza o DOM com count atualizado
+function updateCompletedCount() {
     const editCount = document.getElementById('tasks_Completed');
     if (editCount) {
-        editCount.textContent = `${completedCount} tarefa concluída`
+        editCount.textContent = `${(tasksComplited())} tarefa concluída`
     }
 }
 
+
+//renderização dos itens da lista
 window.onload = function () {
 
     const tasksFromStorage = storage.load();
